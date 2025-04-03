@@ -1,6 +1,6 @@
-# 🧙‍♂️ Kaigan Portfolio
+# 🧙‍♂️ Nicholas Portfolio
 
-Welcome to my magical digital realm – a portfolio crafted with code, creativity, and just a hint of arcane energy.
+Welcome to my magical digital realm – a portfolio crafted with code, creativity, and just a hint of magic.
 
 ---
 
@@ -45,7 +45,7 @@ git clone https://github.com/YOURUSERNAME/kaigan-portfolio.git
 ## 📌 Future Additions
 
 - Add more projects
-- Possibly rebuild in React or Astro
+- Possibly rebuild in React
 - Add animations with GSAP or Framer Motion
 
 ---
