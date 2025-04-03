@@ -2,8 +2,6 @@
 
 Welcome to my magical digital realm – a portfolio crafted with code, creativity, and just a hint of arcane energy.
 
-![preview](assets/images/cocktail-pic.png)
-
 ---
 
 ## ✨ About This Project
