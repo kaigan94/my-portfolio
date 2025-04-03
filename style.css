@@ -1,0 +1,287 @@
+/* ==================================================
+   🌑 Base Styles (Dark Mode Default)
+================================================== */
+html {
+  background-color: #0b0b0b;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  background-color: #0b0b0b;
+  color: #e0e0e0;
+}
+
+/* ==================================================
+   🔗 Global Link Styles
+================================================== */
+a {
+  color: #00ffff;
+}
+
+a:hover {
+  color: #b300ff;
+}
+
+/* ==================================================
+   ✨ Typography & Text Effects
+================================================== */
+.glow-text {
+  font-family: "Cinzel Decorative", cursive;
+  color: #0ff;
+  text-shadow: 0 0 8px #0ff, 0 0 16px #088;
+}
+
+.fancy-title {
+  font-family: "Cinzel Decorative", cursive;
+  color: #fff;
+  text-shadow: 0 0 5px #bb00ff, 0 0 20px #7000ff;
+}
+
+.section-title {
+  font-family: "Cinzel Decorative", cursive;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 6px #8a2be2;
+}
+
+/* ==================================================
+   💼 Project Cards
+================================================== */
+.project-card {
+  background-color: #111;
+  color: #f0f0f0;
+  border: 1px solid #333;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(138, 43, 226, 0.6);
+}
+
+/* ==================================================
+   🌄 Background Variants
+================================================== */
+.bg-gradient-dark {
+  background: linear-gradient(to bottom, #1a1a1a, #000000);
+}
+
+.section-bg {
+  background-color: #1a1a1a;
+}
+
+.section-bg-dark {
+  background-color: #000000;
+}
+
+/* ==================================================
+   🌤️ Light Mode Overrides
+================================================== */
+.light-theme {
+  background-color: #f0f0f0;
+  color: #111;
+}
+
+body.light-mode .lead {
+  background-color: transparent;
+  color: #222;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body.light-mode a {
+  color: #0055aa;
+  transition: color 0.3s ease;
+}
+
+body.light-mode a:hover {
+  color: #c300ff;
+}
+
+body.light-mode .navbar,
+body.light-mode footer {
+  background-color: #ffffff !important;
+  color: #333;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+body.light-mode .navbar .nav-link {
+  color: #333 !important;
+}
+
+body.light-mode .navbar .nav-link:hover {
+  color: #0050a0 !important;
+}
+
+body.light-mode .fancy-title {
+  color: #111;
+  text-shadow: 0 0 6px #ffb3ff, 0 0 18px #ddaaff;
+}
+
+body.light-mode .glow-text {
+  color: #0055aa;
+  text-shadow: 0 0 6px #aad8ff, 0 0 12px #88ccff;
+}
+
+body.light-mode .section-title {
+  color: #000;
+  text-shadow: 0 0 3px #bbb;
+}
+
+body.light-mode .section-bg {
+  background-color: #f5f5f5;
+  color: #111;
+}
+
+body.light-mode .section-bg-dark {
+  background-color: #f5f5f5;
+}
+
+body.light-mode .lead {
+  color: #111;
+}
+
+body.light-mode .project-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  color: #222;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.light-mode .project-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .btn {
+  background-color: #f0f0f0;
+  color: #111;
+  border: 1px solid #bbb;
+}
+
+body.light-mode .btn:hover {
+  background-color: #ddd;
+}
+
+body.light-mode .bg-gradient-dark {
+  background: linear-gradient(to bottom, #eeeeee, #ffffff);
+}
+
+body.light-mode #theme-toggle {
+  background-color: #f0f0f0;
+  color: #111;
+  border: 1px solid #ccc;
+}
+
+body.light-mode #contact p {
+  color: #111;
+}
+
+body.light-mode .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* ==================================================
+   🎨 Button & Icon Styling
+================================================== */
+#theme-icon {
+  display: inline-block;
+  transition: transform 0.4s ease, opacity 0.3s ease;
+}
+
+body:not(.light-mode) #theme-toggle {
+  background-color: #111;
+  color: #eee;
+  border: 1px solid #444;
+}
+
+body:not(.light-mode) #theme-toggle:hover {
+  background-color: #222;
+  color: #0ff;
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.4);
+  transition: all 0.3s ease;
+}
+
+body.light-mode #theme-toggle:hover {
+  background-color: #e0e0e0;
+  color: #7000ff;
+  box-shadow: 0 0 8px rgba(187, 0, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+#theme-toggle:active {
+  transform: scale(0.95);
+  box-shadow: none;
+}
+
+/* ==================================================
+   📱 Responsive Adjustments
+================================================== */
+@media (max-width: 768px) {
+  .navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* ========================
+   🔼 Scroll To Top Button
+=========================== */
+#scrollToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+#scrollToTop img {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 0 3px #0ff);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+body:not(.light-mode) #scrollToTop:hover img {
+  transform: scale(1.08);
+  filter: drop-shadow(0 0 6px #0ff);
+}
+
+body.light-mode #scrollToTop:hover img {
+  transform: scale(1.08);
+  filter: none;
+}
+
+#scrollToTop.show {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* ========================
+   🌀 Teleport Animation
+=========================== */
+@keyframes teleportOut {
+  0% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.3) translateY(-80px);
+  }
+}
+
+#scrollToTop.teleporting img {
+  animation: teleportOut 0.6s ease forwards;
+}
