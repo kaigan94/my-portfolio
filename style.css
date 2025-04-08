@@ -53,6 +53,11 @@ a:hover {
   border: 1px solid #333;
   border-radius: 8px;
   transition: transform 0.3s, box-shadow 0.3s;
+  padding: 14px;
+  font-size: 0.93rem;
+  line-height: 1.4;
+  min-height: 220px;
+  overflow: visible;
 }
 
 .project-card:hover {
